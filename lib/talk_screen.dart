@@ -130,8 +130,6 @@ class _ChatRoomState extends State<ChatRoom> {
 
   Widget buildMessageTile(Map<String, dynamic> messageInfo){
 
-    double width = MediaQuery.of(context).size.width;
-
     return messageInfo['userId']=='user2'?IntrinsicHeight(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
