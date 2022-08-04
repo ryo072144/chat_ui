@@ -117,6 +117,7 @@ class _ChatRoomState extends State<ChatRoom> {
                     messageEditingController.clear();
                     isTyping = false;
                   });
+                  FocusScope.of(context).requestFocus(FocusNode());
                   listScrollController.animateTo(listScrollController.position.maxScrollExtent, duration: const Duration(microseconds: 500), curve: Curves.easeIn);
                 }, icon: const Icon(Icons.send,color: Colors.blueAccent,))
                     :IconButton(onPressed: (){}, icon: const Icon(Icons.mic_none,color: Colors.black,)),
