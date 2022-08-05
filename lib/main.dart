@@ -73,21 +73,8 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.chat_outlined),
             label: 'トーク',
           ),
-          BottomNavigationBarItem(
-            icon: Stack(
-              children: [
-                const Icon(Icons.newspaper_outlined),
-                Container(
-                  margin: const EdgeInsets.only(left: 18),
-                  width: 7,
-                  height: 7,
-                  decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(45)
-                  ),
-                )
-              ],
-            ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.newspaper_outlined),
             label: 'ニュース',
           ),
           const BottomNavigationBarItem(
